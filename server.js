@@ -66,6 +66,13 @@ app.get('/about', (req, res) => {
 
 });
 
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'Mis Proyectos (Porfolio)!'
+    });
+
+});
+
 app.get('/bad', (req, res) => {
     res.send({
         name: 'Ha habido un error',
